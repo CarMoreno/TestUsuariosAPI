@@ -10,3 +10,6 @@ Test - API de usuarios
 * Crear usuario: ``POST http://127.0.0.1:8000/api/crear/``
 * Eliminar Usuario: ``DELETE http://127.0.0.1:8000/api/eliminar/13``
 * Geocodificar dirección de usuario: ``GET http://127.0.0.1:8000/api/geocodificar_base/``
+
+Para el ultimo punto, se debe correr así:
+``python elecciones.py``
