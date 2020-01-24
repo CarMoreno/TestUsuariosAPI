@@ -55,10 +55,11 @@ class UsuarioLatLong(APIView):
                 usuario.latitud = geometry['location']['lat']
                 usuario.longitud = geometry['location']['lng']
                 usuario.estadogeo = True
-                usuario.save()
             else:
                 usuario.latitud = 0
                 usuario.longitud = 0
+
+            usuario.save()
 
         def get(self, request):
             usuarios_sin_latlong = Usuario.objects.filter(latitud=None, longitud=None)
